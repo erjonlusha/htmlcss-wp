@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 60vw;
+  background: url("../img/natural-default-pattern.png");
+  margin: auto;
+  text-align: center;
+  max-width: 1120px;
+}
+
+/* Utility */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.box {
+  float: left;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.debug {
+  background-color: yellow;
+  height: 500px;
+}
+
+.card {
+  border-radius: 5px
+}
+
+/* /Utility */
+/* header */
+header {
+  width: 100%;
+  height: 350px;
+}
+
+header>section {
+  background-color: blue;
+  width: 100%;
+  height: 85%;
+}
+
+nav {
+  width: 100%;
+  height: 15%;
+  background-color: #504741;
+}
+
+/* /header */
+/* main */
+.box.left>.card {
+  height: 250px;
+  background-color: green;
+}
+
+.box.central>.card {
+  height: 200px;
+  margin: 0 10%;
+  background-color: purple;
+}
+
+.box.right>.card:first-child {
+  height: 30%;
+  background-color: red;
+}
+
+.box.right>.card:nth-child(2n+2) {
+  height: 30%;
+  background-color: orange;
+}
+
+.box.right>.card:last-child {
+  height: 30%;
+  background-color: pink;
+}
+/* /main */
+/* footer */
+footer {
+  width: 100%;
+  height: 175px;
+  background-color: white;
+}
+
+/* /footer */
