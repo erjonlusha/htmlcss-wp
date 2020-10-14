@@ -17,7 +17,9 @@ body {
   display: table;
   clear: both;
 }
-
+.upercase {
+  text-transform: uppercase;
+}
 .box {
   float: left;
 }
@@ -32,24 +34,48 @@ body {
 
 .debug {
   background-color: yellow;
-  height: 500px;
+  /* height: 500px; */
 }
 
 .card {
   border-radius: 5px
+}
+h3 {
+  padding: 10px;
+  display: inline-block;
+}
+
+
+header, footer{
+  margin: 2% 0 1% 0;
 }
 
 /* /Utility */
 /* header */
 header {
   width: 100%;
-  height: 350px;
+  height: 25%;
+  color: white;
 }
 
-header>section {
+header>.cover {
   background-color: blue;
   width: 100%;
   height: 85%;
+  background-image: url("../img/natural-default-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 10px solid white;
+}
+
+header>.cover>img {
+  width: 50%;
+  height: 100%;
+}
+
+header>section>h2 {
+  padding-bottom: 50px;
 }
 
 nav {
@@ -57,34 +83,85 @@ nav {
   height: 15%;
   background-color: #504741;
 }
+/* menu */
+ul li {
+  list-style: none;
+  padding: 0;
+}
+nav>ul li {
+  display: inline-block;
+  padding: 10px;
+  border-right: 2px solid #3c3531;
+  line-height: 2em;
+}
+nav>ul li:hover{
+  background-color: #cecece;
+  cursor: pointer;
+}
+nav>ul>li:last-child {
+  border-right-width: 0px;
+}
+/* Sub-Menu */
+.sub_menu li {
+  border: none;
+  display: none;
+}
+.sub_menu::after {
+  content: " »";
+}
+.sub_menu:hover li {
+  text-transform: capitalize;
+  display: list-item;
+}
+.sub_menu>ul>li {
+  border-bottom: 2px solid #3c3531;
+}
 
+.sub_menu>ul>li:last-child {
+  border-bottom-width: 0px;
+}
+
+
+.sub_menu>ul {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  padding-left: 0px;
+  left: 0px;
+  right: auto;
+  background-color: #504741;
+}
+
+.sub_menu {
+  position: relative;
+}
+
+/* /Sub-Menu */
+/* /menu */
 /* /header */
 /* main */
 .box.left>.card {
-  height: 250px;
   background-color: green;
 }
 
 .box.central>.card {
-  height: 200px;
   margin: 0 10%;
   background-color: purple;
 }
 
 .box.right>.card:first-child {
-  height: 30%;
   background-color: red;
 }
 
 .box.right>.card:nth-child(2n+2) {
-  height: 30%;
+  margin: 10% 0;
   background-color: orange;
 }
 
 .box.right>.card:last-child {
-  height: 30%;
   background-color: pink;
 }
+
 /* /main */
 /* footer */
 footer {
@@ -92,5 +169,10 @@ footer {
   height: 175px;
   background-color: white;
 }
+footer>h2{
+  color: #cecece;
+  border-bottom: 1px solid #504741;
+}
+
 
 /* /footer */
