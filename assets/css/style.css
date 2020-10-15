@@ -5,6 +5,7 @@
 
 body {
   width: 60vw;
+  font-family: 'Roboto', sans-serif;
   background: url("../img/natural-default-pattern.png");
   margin: auto;
   text-align: center;
@@ -207,6 +208,10 @@ footer>.card-un>h2 {
   width: 100%;
   border-radius: 5px;
   background-color: white;
+}
+
+footer>div>div>ul {
+  padding: 0;
 }
 
 footer>div>div>ul>li {
