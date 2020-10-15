@@ -18,9 +18,11 @@ body {
   display: table;
   clear: both;
 }
+
 .upercase {
   text-transform: uppercase;
 }
+
 .box {
   float: left;
 }
@@ -38,17 +40,23 @@ body {
   background-color: white;
   border-radius: 5px
 }
+
 h3 {
   padding: 10px;
   display: inline-block;
 }
-.sh-text{
-  text-shadow:  2px 2px 8px #000000
+
+.sh-text {
+  text-shadow: 2px 2px 8px #000000
 }
-header, footer{
+
+header, footer {
   margin: 2% 0 1% 0;
 }
-a{text-decoration: none;}
+
+a {
+  text-decoration: none;
+}
 
 /* /Utility */
 /* header */
@@ -82,43 +90,52 @@ nav {
   height: 15%;
   background-color: #504741;
 }
+
 /* menu */
-li a{
+li a {
   text-decoration: none;
 }
 
-li a:visited{
-  color:white;
+li a:visited {
+  color: white;
 }
+
 ul li {
   list-style: none;
   padding: 0;
 }
+
 nav>ul li {
   display: inline-block;
   padding: 10px;
   border-right: 2px solid #3c3531;
   line-height: 2em;
 }
-nav>ul li:hover{
+
+nav>ul li:hover {
   background-color: #cecece;
   cursor: pointer;
 }
+
 nav>ul>li:last-child {
   border-right-width: 0px;
 }
+
 /* Sub-Menu */
 .sub_menu li {
   border: none;
   display: none;
 }
+
 .sub_menu::after {
   content: " »";
 }
+
 .sub_menu:hover li {
   text-transform: capitalize;
   display: list-item;
 }
+
 .sub_menu>ul>li {
   border-bottom: 2px solid #3c3531;
 }
@@ -126,7 +143,6 @@ nav>ul>li:last-child {
 .sub_menu>ul>li:last-child {
   border-bottom-width: 0px;
 }
-
 
 .sub_menu>ul {
   position: absolute;
@@ -146,18 +162,26 @@ nav>ul>li:last-child {
 /* /menu */
 /* /header */
 /* main */
+.left>.card>i {
+  float: left;
+  font-size: 24px;
+  color: orange;
+}
+
 .box.central>.card {
   margin: 0 5%;
 }
-.bg-text{
+
+.bg-text {
   color: green;
   font-size: 17px;
 }
+
 .bg_text:visited {
   color: green;
-
 }
-.bg-text:hover{
+
+.bg-text:hover {
   background-color: gray;
   color: #064206;
   text-decoration: underline;
@@ -165,20 +189,36 @@ nav>ul>li:last-child {
 
 .box.right>.card:nth-child(2n+2) {
   margin: 10% 0;
-  }
+}
+
 /* /main */
 /* footer */
 footer {
   width: 100%;
-}
-footer>.card.un>h2{
-  padding:1%;
   color: #cecece;
+}
+
+footer>.card-un>h2 {
+  padding-bottom: 1%;
   border-bottom: 1px solid #504741;
 }
-.card.un{width: 100%}
-.pad-20{
-  padding: 3% 10% 0 10%;
+
+.card-un {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+footer>div>div>ul>li {
+  display: inline-block;
+}
+
+footer>div>div>ul>li:nth-child(2) {
+  margin: 2% 30%;
+}
+
+.fab {
+  font-size: 50px;
 }
 
 /* /footer */
